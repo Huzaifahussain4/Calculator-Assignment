@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background-color: #393c44;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100Vh;
+    width: 100vw;
+}
+
+.calcParent {
+    width: 260px;
+    height: 500px;
+    background-color: #22252d;
+    border-radius: 30px;
+}
+
+
+
+.btnsParent {
+    height: 60%;
+    padding: 10px;
+    background-color: #2a2d37;
+    border-radius: 30px;
+}
+
+.inputCalcParent {
+    height: 40%;
+    border: none;
+    /* width: 100%; */
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.inputCalc {
+    background: transparent;
+    border: none;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 220px;
+}
+
+.inputCalc:focus {
+    outline: none;
+
+}
+
+.inputCalc::placeholder {
+    color: white;
+
+}
+
+.div1 button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 6px;
+    outline: none;
+    background-color: #282b33;
+    cursor: pointer;
+    /* color: white; */
+    /* font-size: 12px; */
+}
+
+.div1 {
+    padding: 0px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnsSubParent {
+    margin-top: 15px;
+}
+
+.btnGreen {
+    color: #71e1d2;
+    font-weight: 500;
+}
+
+.btnRed {
+    color: #e38084;
+    font-weight: 500;
+}
+
+.btnWhite {
+    color: white;
+    font-weight: 500;
+}
+
+/* .div1{
+    padding: 5px;
+    margin: 10px;
+}
+
+.div1 button {
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #282b33;
+    background-color: red;
+    color: #fff;
+    border: none;
+    outline: none;
+} */
+
+
+#checkBox{
+    visibility: hidden;
+}
+
+.toggleBtn{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.toggeLabel{
+    width: 3rem;
+    height: 2rem;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+    transition: all .2s linear;
+}
+
+.toggleBall{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #2a2d37;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: .25rem;
+    left: .25rem;
+    transition: all .2s linear;
+}
+
+#checkBox:checked + .toggeLabel .toggleBall{
+    transform: translateX(1rem);
+    background-color: #e7c100;
+}
+
+#checkBox:checked + .toggeLabel {
+    background-color: #5100e7;
+}
