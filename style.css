@@ -8,10 +8,14 @@
 }
 
 body{
-    background-color: #393c44;
+    background-color: rgb(62, 69, 88);
+    /* background: linear-gradient(90deg, #154650, #17676C); */
 }
 
 .container {
+    /* background-image: url(./symbols-02.png);
+    background-size: 2000px 1100px;
+    opacity: 10%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,23 +25,26 @@ body{
 }
 
 .calcParent {
-    width: 260px;
-    height: 500px;
-    background-color: #22252d;
+    width: 300px;
+    height: 600px;
+    background-color: rgba(34,37,45,0.4);
+    /* opacity: 10%; */
     border-radius: 30px;
+    position: absolute;
+    backdrop-filter: blur(10px);
 }
 
 
 
 .btnsParent {
-    height: 60%;
+    height: 65%;
     padding: 10px;
-    background-color: #2a2d37;
+    /* background-color: rgba(34,37,45,0.4); */
     border-radius: 30px;
 }
 
 .inputCalcParent {
-    height: 40%;
+    height: 37%;
     border: none;
     /* width: 100%; */
     background: transparent;
@@ -52,7 +59,7 @@ body{
     border: none;
     text-align: right;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 500;
     margin-bottom: 20px;
     width: 220px;
@@ -69,17 +76,23 @@ body{
 }
 
 .div1 button {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     border: none;
-    border-radius: 5px;
+    border-radius: 19px;
     padding: 10px;
     margin: 6px;
     outline: none;
-    background-color: #282b33;
+    background-color: rgba(40,43,51,0.4);
     cursor: pointer;
     /* color: white; */
-    /* font-size: 12px; */
+    font-size: 17px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.div1 button:hover{
+    box-shadow: 0 0 10px 1px #484d60;
 }
 
 .div1 {
@@ -96,12 +109,12 @@ body{
 }
 
 .btnGreen {
-    color: #71e1d2;
+    color:  #e38084;
     font-weight: 500;
 }
 
 .btnRed {
-    color: #e38084;
+    color: #71e1d2;
     font-weight: 500;
 }
 
@@ -169,3 +182,92 @@ body{
 #checkBox:checked + .toggeLabel {
     background-color: #5100e7;
 }
+
+.shapeDivMain{
+    position: absolute;
+    /* width: 1000px; */
+    /* animation-duration: 10s;
+    animation-delay: 0s; */
+    /* transform: translate(-50%,-50%); */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.shapeDivMain .svg1{
+    width: 400px;
+    height: 400px;
+    right: -243px;
+    bottom: -357px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+}
+
+.shapeDivMain .svg2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -243px;
+    top: -357px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* .shapeDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px; */
+    /* position: absolute; */
+    /* border-radius: 50%; */
+    /* animation: animate 5s linear infinite; */
+    /* bottom: -150px;/ */
+/* } */
+
+@keyframes animate{
+    /* 0%{rotate: 0deg;}
+    100%{rotate: 360deg;} */
+    /* 0%{
+        transform:scale(1.2) rotate(0deg);
+    }
+    100%{
+        transform: scale(1)  rotate(720deg);
+    } */
+    /* 0%{
+        transform:scale(1) rotate(0deg);
+    } */
+}
+
+/* .shapeDivMain > .shapeDiv:nth-child(1){
+    right: -243px;
+    bottom: -357px;
+    animation-delay: 0s;
+}
+
+.shapeDiv :nth-child(2){
+    left: -243px;
+    top: -357px;
+    animation-delay: 0s;
+    transform: translate(-243px);
+} */
+
+/* .shapeDiv:first-child{
+    background: linear-gradient(#9b22ea, #bf23f6);
+    left: -243px;
+    top: -357px;
+}
+
+.shapeDiv:last-child{
+    background: linear-gradient(#ff512f, #f09819);
+    right: -243px;
+    bottom: -357px;
+} */
+
+
+
+
+
+
