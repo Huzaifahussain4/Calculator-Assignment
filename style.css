@@ -4,18 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* box-sizing: border-box; */
 }
 
 body{
-    background-color: rgb(62, 69, 88);
-    /* background: linear-gradient(90deg, #154650, #17676C); */
+    background: linear-gradient(45deg, rgb(38, 42, 53), rgb(62, 69, 88));
 }
 
 .container {
-    /* background-image: url(./symbols-02.png);
-    background-size: 2000px 1100px;
-    opacity: 10%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +23,6 @@ body{
     width: 300px;
     height: 600px;
     background-color: rgba(34,37,45,0.4);
-    /* opacity: 10%; */
     border-radius: 30px;
     position: absolute;
     backdrop-filter: blur(10px);
@@ -39,14 +33,12 @@ body{
 .btnsParent {
     height: 65%;
     padding: 10px;
-    /* background-color: rgba(34,37,45,0.4); */
     border-radius: 30px;
 }
 
 .inputCalcParent {
     height: 37%;
     border: none;
-    /* width: 100%; */
     background: transparent;
     display: flex;
     justify-content: flex-end;
@@ -97,7 +89,6 @@ body{
 
 .div1 {
     padding: 0px;
-    /* margin: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,25 +113,6 @@ body{
     color: white;
     font-weight: 500;
 }
-
-/* .div1{
-    padding: 5px;
-    margin: 10px;
-}
-
-.div1 button {
-    padding: 10px;
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #282b33;
-    background-color: red;
-    color: #fff;
-    border: none;
-    outline: none;
-} */
-
 
 #checkBox{
     visibility: hidden;
